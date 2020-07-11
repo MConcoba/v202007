@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Dependencies } from "@corecodeio/libraries/di";
 import { Request, Response } from "express";
 import { MessagePayload } from "./feature/message-source/interfaces/MessagePayload";
@@ -29,20 +28,6 @@ server.post("/message-source", async (req: Request, res: Response) => {
 
   return res.status(200);
 });
-=======
-import { Request, Response } from "express";
-import Dependencies from "@corecodeio/libraries/di";
-import { MessageScourceControllerInjectionKey } from "./feature/menssage-source/controller/MessageScourceControllerInjectionKey";
-import server from "./server";
-
-server.post("/menssage-source", async (req: Request, res: Response) => {
-  console.log(req.body);
-  return res.status(200);
-}); 
-
-const dependencies = new Dependencies();
-const MessageScourceController = dependencies.provide(MessageScourceControllerInjectionKey);
->>>>>>> 98c58f8... omnichannel-sever
 
 server.listen("8001", () => {
   console.log("listening");
