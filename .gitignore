@@ -1,3 +1,5 @@
-wordpress/.env
-omnichannel-server/node_modules
+.env
+node_modules
 .vscode
+lerna-debug.log
+.DS_Store

@@ -8,12 +8,11 @@ export const SendPhoneNumberVerificationCode: React.FC<{}> = () => {
   const dependencies = React.useContext(DependencyContext);
   const onboarding = dependencies.provide(OnboardingInjectionKey);
 
-  const [count, setCount] = onboarding.useSendPhoneNumberVerificationCode();
+  let [count, setCount] = onboarding.useSendPhoneNumberVerificationCode();
 
   const onSendPhoneNumberVerificationCode = async () => {
     try {
-      console.log(count);
-      await setCount(2);
+      await setCount(count + 1);
     } catch (error) {
       // TODO handle error
     }
