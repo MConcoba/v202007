@@ -1,7 +1,8 @@
 import { client } from "../client";
 import { ISMSVerification } from "../interface/ISMSVerification";
 
-const serviceId = process.env.TWILIO_SMS_SID;
+/* const serviceId = process.env.TWILIO_SMS_SID; */
+const serviceId = "SM4f5c453ada3cd15c8d77fae5bf431c37"
 
 const send = async (to: string): Promise<boolean> => {
   try {
