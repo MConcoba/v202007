@@ -651,10 +651,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@corecodeio/libraries@1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@corecodeio/libraries/1.0.3/c89c26b0ab03be7ffc033c8dccbd5f13cd5808236b587c45d74f0d2980557a37#be7b670a737c18a3b2c44a2c1ed2e22134dfd1af"
-  integrity sha512-4L7ApSX8rA9hzmc65gA7LkaAzhUeZH4iOa9J47nbFV1JZ01Ok0qhKzHPYHPdA3Lv4Bxwee29pzQOLCqQHrqsPQ==
+"@corecodeio/libraries@^1.0.3":
+  version "1.0.4"
+  resolved "https://npm.pkg.github.com/download/@corecodeio/libraries/1.0.4/e6513c628cdcfe73755f70b4f81651c8486a7bcb8dba3124e6d994540b3e715b#5b572fe2981041645693224f085cf4e780fbd25b"
+  integrity sha512-8dVP5LGhq1ygioApp97a7M9yqNYPGWhAUdGWIH6kNqO6TOKu1f86qZpMdHo4QbqbCQ5ctQKrdvj8giTa1Htxow==
+  dependencies:
+    graphql-tag "^2.11.0"
 
 "@graphql-codegen/cli@^1.17.7":
   version "1.17.7"
@@ -2661,6 +2663,14 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+custom-env@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/custom-env/-/custom-env-2.0.1.tgz#30afaf5200f43aa86731f81576387f5d2af2c51b"
+  integrity sha512-gVv19DBDuTQ8MM/WPlf8025Aa46Aqmfrr/kDxyDfXWe5t7C3+OgBsuhrsXTKQ4hGo+z1OuuaOQnhgTWIpvrz+w==
+  dependencies:
+    dotenv "*"
+    dotenv-expand "^5.0.0"
+
 d@1, d@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
@@ -2874,7 +2884,12 @@ dot-case@^3.0.3:
     no-case "^3.0.3"
     tslib "^1.10.0"
 
-dotenv@^8.2.0:
+dotenv-expand@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
+  integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
+
+dotenv@*, dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -3541,19 +3556,17 @@ graphql-extensions@^0.12.4:
     apollo-server-env "^2.4.5"
     apollo-server-types "^0.5.1"
 
-<<<<<<< HEAD
 graphql-middleware@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/graphql-middleware/-/graphql-middleware-4.0.2.tgz#eb589bf428e1795e48cd6a3cfeeba0807b996ebd"
   integrity sha512-ESVDvMXeN00S1BNsjNS18uExcR16J8zbT31CuKcpyeBa7IMbidG0Pnqnu5P1wKkJLmPmKOfCljWlhXpD/Fawqg==
   dependencies:
     graphql-tools "^4.0.5"
-=======
+
 graphql-request@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-2.0.0.tgz#8dd12cf1eb2ce0c80f4114fd851741e091134862"
   integrity sha512-Ww3Ax+G3l2d+mPT8w7HC9LfrKjutnCKtnDq7ZZp2ghVk5IQDjwAk3/arRF1ix17Ky15rm0hrSKVKxRhIVlSuoQ==
->>>>>>> 3b777995d16378dbc58e39c1cdf95cde6a15e2cc
 
 graphql-subscriptions@^1.0.0:
   version "1.1.0"
@@ -3562,7 +3575,7 @@ graphql-subscriptions@^1.0.0:
   dependencies:
     iterall "^1.2.1"
 
-graphql-tag@2.11.0, graphql-tag@^2.9.2:
+graphql-tag@2.11.0, graphql-tag@^2.11.0, graphql-tag@^2.9.2:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
   integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==

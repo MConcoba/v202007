@@ -6,9 +6,10 @@
     "api:schema:generate": "graphql-codegen"
   },
   "dependencies": {
-    "@corecodeio/libraries": "1.0.3",
+    "@corecodeio/libraries": "^1.0.3",
     "apollo-server-express": "^2.16.1",
     "convict": "^6.0.0",
+    "custom-env": "^2.0.1",
     "express": "^4.17.1",
     "graphql-middleware": "^4.0.2",
     "twilio": "^3.48.1"

@@ -1,35 +1,26 @@
 Arguments: 
-  /Users/svpervnder/.nvm/versions/node/v12.18.0/bin/node /Users/svpervnder/.nvm/versions/node/v12.18.0/bin/yarn
+  C:\Program Files (x86)\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js link @corecodeio/libraries
 
 PATH: 
-  /Users/svpervnder/.nvm/versions/node/v12.18.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+  C:\Users\DELL\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\DELL\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Yarn\bin;C:\Users\DELL\AppData\Local\watchman;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.4
 
 Node version: 
-  12.18.0
+  12.14.1
 
 Platform: 
-  darwin x64
+  win32 ia32
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@corecodeio%2flibraries: Not found
-      at Request.params.callback [as _callback] (/Users/svpervnder/.nvm/versions/node/v12.18.0/lib/node_modules/yarn/lib/cli.js:66987:18)
-      at Request.self.callback (/Users/svpervnder/.nvm/versions/node/v12.18.0/lib/node_modules/yarn/lib/cli.js:140748:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (/Users/svpervnder/.nvm/versions/node/v12.18.0/lib/node_modules/yarn/lib/cli.js:141720:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (/Users/svpervnder/.nvm/versions/node/v12.18.0/lib/node_modules/yarn/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1221:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: EBUSY: resource busy or locked, symlink 'C:\Users\DELL\AppData\Local\Yarn\Data\link\@corecodeio\libraries' -> 'C:\Users\DELL\Desktop\Core-Code\v202007\app\native\node_modules\@corecodeio\libraries'
 
 npm manifest: 
   {
-    "name": "@corecodeio/native",
-    "main": ".expo/AppEntry.js",
+    "main": "node_modules/expo/AppEntry.js",
+    "name": "@corecodeio/api",
+    "version": "1.0.0",
     "scripts": {
       "postinstall": "expo-yarn-workspaces postinstall",
       "start": "expo start",
@@ -39,6 +30,7 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@corecodeio/libraries": "^1.0.0",
       "@react-native-community/masked-view": "0.1.10",
       "@react-navigation/native": "^5.7.1",
       "@react-navigation/stack": "^5.7.1",
@@ -55,8 +47,7 @@ npm manifest:
       "react-native-screens": "~2.9.0",
       "react-native-web": "~0.11.7",
       "styled-components": "^5.1.1",
-      "styled-system": "^5.1.5",
-      "@corecodeio/libraries": "*"
+      "styled-system": "^5.1.5"
     },
     "devDependencies": {
       "@babel/core": "^7.8.6",
@@ -1049,6 +1040,11 @@ Lockfile:
     dependencies:
       exec-sh "^0.3.2"
       minimist "^1.2.0"
+  
+  "@corecodeio/libraries@^1.0.0":
+    version "1.0.0"
+    resolved "https://npm.pkg.github.com/download/@corecodeio/libraries/1.0.0/d1ab60a3d46e634e354995936a94a8d8f25240ee1ca724ea70b3780cbd8a2c97#78ea26cbfa7e7a43354ad41c62a04b74bb42c796"
+    integrity sha512-vseGkA/SuIZtfDwMw0GWUAhq/SCXCYVomdjS0zYjWTpqdxlkYLWplj12Ag/DcALOMy6G+3TcY3KaZgCiw84yNQ==
   
   "@egjs/hammerjs@^2.0.17":
     version "2.0.17"
@@ -3436,6 +3432,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.2.tgz#2441a77c56be31597898337b0d086981f2adefd8"
     integrity sha512-5313u744GcLzCadxIPXyTkYw77++UXv1dXCuhYDxDbtsEf93iMra7WSvzyE8a7mRQLIIPRuGnBOdrL/V1C7EOQ==
   
+  expo-yarn-workspaces@^1.2.1:
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/expo-yarn-workspaces/-/expo-yarn-workspaces-1.2.1.tgz#7efb0392f7270b47ca34bfc7791d2e2d8b3d45f5"
+    integrity sha512-2pFvXpVkjsHIll+WI0+2bs2AGniTu7jSiT7IOY3yVkyEZyUTb5IVJx3egde5PWPK7VSVt8X3GwxHDbHP87pVUw==
+    dependencies:
+      debug "^4.1.1"
+      find-yarn-workspace-root "^1.2.0"
+      mkdirp "^0.5.1"
+  
   expo@~38.0.8:
     version "38.0.8"
     resolved "https://registry.yarnpkg.com/expo/-/expo-38.0.8.tgz#c85727eb382d51d8a8289bc669257b1c90472406"
@@ -3711,6 +3716,14 @@ Lockfile:
       locate-path "^5.0.0"
       path-exists "^4.0.0"
   
+  find-yarn-workspace-root@^1.2.0:
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/find-yarn-workspace-root/-/find-yarn-workspace-root-1.2.1.tgz#40eb8e6e7c2502ddfaa2577c176f221422f860db"
+    integrity sha512-dVtfb0WuQG+8Ag2uWkbG79hOUzEsRrhBzgfn86g2sJPkzmcpGdghbNTfUKGTxymFrY/tLIodDzLoW9nOJ4FY8Q==
+    dependencies:
+      fs-extra "^4.0.3"
+      micromatch "^3.1.4"
+  
   fontfaceobserver@^2.1.0:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/fontfaceobserver/-/fontfaceobserver-2.1.0.tgz#e2705d293e2c585a6531c2a722905657317a2991"
@@ -3770,6 +3783,15 @@ Lockfile:
       graceful-fs "^4.1.2"
       jsonfile "^2.1.0"
       klaw "^1.0.0"
+  
+  fs-extra@^4.0.3:
+    version "4.0.3"
+    resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
+    integrity sha512-q6rbdDd1o2mAnQreO7YADIxf/Whx4AHBiRf6d+/cVT8h44ss+lHgxf1FemcqDnQt9X3ct4McHr+JMGlYSsK7Cg==
+    dependencies:
+      graceful-fs "^4.1.2"
+      jsonfile "^4.0.0"
+      universalify "^0.1.0"
   
   fs-extra@^8.1.0:
     version "8.1.0"
