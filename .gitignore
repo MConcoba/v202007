@@ -2,3 +2,4 @@ wordpress/.env
 omnichannel-server/node_modules
 .vscode
 node_modules
+.env
