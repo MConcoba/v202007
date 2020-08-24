@@ -3,3 +3,8 @@ omnichannel-server/node_modules
 .vscode
 node_modules
 .env
+lerna-debug.log
+.DS_Store
+dist/
+corecodeio.jwt
+corecodeio.jwt.pub
